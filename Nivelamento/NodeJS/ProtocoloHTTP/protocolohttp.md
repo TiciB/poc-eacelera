@@ -86,3 +86,9 @@ const server = http.createServer((req, res) => {
 **4. Conclusão**
 
 Neste guia, você aprendeu a criar um servidor HTTP simples usando Node.js com a sintaxe de import, além de manipular rotas. Esse é o primeiro passo para desenvolver aplicações web mais complexas com Node.js.
+
+
+[Link do vídeo](https://www.youtube.com/watch?v=QnTCre0HHv8&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B&index=7)
+
+### Referências
+[Node.js HTTP Module](https://www.w3schools.com/nodejs/nodejs_http.asp)
