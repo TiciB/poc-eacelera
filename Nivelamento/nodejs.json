@@ -1,1 +1,9 @@
+[
+  {
+    "title": "Node JS"
+    "description": "# Node JS
+O **Node.js** foi criado para executar o JavaScript **fora** de um navegador web, ampliando o potencial dessa linguagem para o desenvolvimento de aplicações back-end, APIs e bibliotecas. Ele nos permite criar soluções diversas e completas, funcionando de maneira eficiente e leve em diferentes contextos e dispositivos. O Node.js **interpreta código JavaScript**, assim como faria um navegador, mas fora do ambiente do browser. Quando executamos um comando em JavaScript, o Node.js faz a conversão do código para **linguagem de máquina**, pronta para ser executada pelo computador. Por isso, ele é conhecido como um JavaScript Runtime, uma plataforma que executa JavaScript diretamente no sistema. Node.js possibilita a criação de **aplicações web** e **desktop**, interfaces de linha de comando (CLI), chatbots, e é amplamente utilizado em projetos de Internet das Coisas (IoT), além de outras possibilidades que você pode explorar com essa ferramenta. Essa tecnologia é adotada por grandes empresas, como LinkedIn, IBM, Uber, e Netflix, devido à sua leveza, eficiência e multifuncionalidade.
+"
 
+  }
+]
