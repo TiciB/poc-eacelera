@@ -1,0 +1,57 @@
+{
+  "guia": "Iniciar o uso de HTTP com Node.js e o módulo HTTP",
+  "pre_requisitos": {
+    "node": "Certifique-se de que o Node.js está instalado em seu sistema.",
+    "link_instalacao": "https://nodejs.org/pt/download/package-manager"
+  },
+  "passos": [
+    {
+      "titulo": "Criando um servidor HTTP simples",
+      "subpassos": [
+        {
+          "etapa": "Criar um novo arquivo",
+          "descricao": "No diretório desejado, crie um arquivo chamado server.js"
+        },
+        {
+          "etapa": "Importar módulo HTTP",
+          "codigo": "import http from 'http';"
+        },
+        {
+          "etapa": "Criar servidor",
+          "codigo": "const server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello, World!\\n');\n});"
+        },
+        {
+          "etapa": "Definir porta",
+          "codigo": "const PORT = 3000;\nserver.listen(PORT, () => {\n  console.log(`Servidor rodando em http://localhost:${PORT}/`);\n});"
+        },
+        {
+          "etapa": "Executar servidor",
+          "comando": "node server.js",
+          "mensagem": "Você verá uma mensagem informando que o servidor está em execução."
+        }
+      ]
+    },
+    {
+      "titulo": "Testando o servidor",
+      "url": "http://localhost:3000/",
+      "resultado_esperado": "Hello, World!"
+    },
+    {
+      "titulo": "Manipulando rotas",
+      "codigo": "const server = http.createServer((req, res) => {\n  if (req.url === '/') {\n    res.statusCode = 200;\n    res.setHeader('Content-Type', 'text/plain');\n    res.end('Página Inicial\\n');\n  } else if (req.url === '/sobre') {\n    res.statusCode = 200;\n    res.setHeader('Content-Type', 'text/plain');\n    res.end('Página Sobre\\n');\n  } else {\n    res.statusCode = 404;\n    res.setHeader('Content-Type', 'text/plain');\n    res.end('404 Não Encontrado\\n');\n  }\n});"
+    },
+    {
+      "titulo": "Conclusão",
+      "descricao": "Você aprendeu a criar um servidor HTTP simples usando Node.js com a sintaxe de import, além de manipular rotas."
+    }
+  ],
+  "recursos": {
+    "video": "https://www.youtube.com/watch?v=QnTCre0HHv8&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B&index=7",
+    "referencias": [
+      {
+        "titulo": "Node.js HTTP Module",
+        "link": "https://www.w3schools.com/nodejs/nodejs_http.asp"
+      }
+    ]
+  }
+}
